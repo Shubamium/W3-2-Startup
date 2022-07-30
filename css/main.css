@@ -10,3 +10,41 @@ body{
     font-family: 'dosis',sans-serif;
 }
 
+
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 0 5px black;
+}
+    .head h1{
+        padding: 20px;
+        font-weight: 100;
+    }
+    .head .nav {
+        min-width: 500px;
+        min-height: 70px;
+        padding: 0 1em;
+    }
+        .head .nav .navbar{
+            list-style-type: none;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            height:100%;
+
+        }
+            .head .nav .navbar li{
+                height: 100%;
+                padding: 0 1.5em;
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+            .head .nav .navbar li i{
+                font-size: 1.4rem;
+                margin: 0px .4rem;
+            }
