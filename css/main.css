@@ -10,6 +10,9 @@ body{
     font-family: 'dosis',sans-serif;
 }
 
+.upper-align {
+    vertical-align: super;
+}
 
 .position-bottom-left{
     position: absolute;
@@ -245,11 +248,14 @@ body{
                 width: 100%;
                 border: none;
                 background-color: lightgray;
+                font-size: 1.2rem;
             }
 
             .people-card button:hover{
                 cursor: pointer;
-                background-color: gray;
+                background-color: rgb(134, 48, 48);
+                color: white;
+                transition: background-color .5s;
             }
 
             .people-card .title h3{
@@ -265,3 +271,17 @@ body{
             .title + p{
                 margin: 20px;
             }
+
+.stats{
+    color: white;
+    background-color: grey;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vh;
+    min-height: 20vh;
+}
+    .stats h2{
+        text-align: center;
+    }
