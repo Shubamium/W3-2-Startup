@@ -11,6 +11,11 @@ body{
 }
 
 
+.position-bottom-left{
+    position: absolute;
+    bottom: 1em;
+
+}
 
 .head{
     display: flex;
@@ -19,6 +24,7 @@ body{
 }
     .head h1{
         padding: 20px;
+
         font-weight: 100;
     }
     .head .nav {
@@ -48,3 +54,73 @@ body{
                 font-size: 1.4rem;
                 margin: 0px .4rem;
             }
+    
+
+.main-display{
+    color: aliceblue;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /*Background*/
+    background: url(../media/gif/Icosa_Unravel.gif) fixed center;
+    background-color: rgb(121, 121, 121);
+    background-size: contain;
+    background-blend-mode: multiply;
+    transition: all 2s, background-color 0ms,min-height 0ms;
+    padding: 1em;
+}
+    .main-display:hover{
+         background: linear-gradient(to right,rgba(0, 0, 255, 0.7),rgba(255, 0, 0, 0.7)) fixed center , url(../media/gif/Icosa_Unravel.gif) fixed right;
+         background-size: cover;
+         background-size: 25%;
+         background-blend-mode: multiply;
+         transition: all 2s;
+    }
+
+    .main-display h2{
+        font-size: 4rem;
+        margin: 2rem 0;
+    }
+
+    .main-display button{
+        padding: .5em;
+        background-color: rgba(104, 104, 104, 0.809);
+        border: none;
+        margin: 1.1em 0;
+        font-size: larger;
+        border-radius: .2vw;
+        width: 400px;
+    }
+
+        .subtitle{
+            color: rgb(164, 164, 164);
+            font-size: 1.5rem;
+        }
+
+        .main-display button:hover{
+            background-color:  rgba(173, 173, 173, 0.913);
+            transition: background-color .2s;
+            cursor: pointer;
+        }
+
+        .social .icons{
+            display: flex;
+            gap: 4px;
+            
+            list-style-type: none;
+        }
+        
+        .social .icons li{
+            font-size: 1.5rem;
+            opacity: .3;
+        }
+
+        .social .icons li:hover{
+            font-size: 1.5rem;
+            opacity: 1;
+            vertical-align: super;
+        }
+
+ 
