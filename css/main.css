@@ -116,13 +116,52 @@ body{
             
             .social .icons li{
                 font-size: 1.5rem;
-                opacity: .3;
+            }
+            .social .icons li{
+                color: gray;
             }
 
-            .social .icons li:hover{
+            .social .icons li:hover i{
                 font-size: 1.5rem;
+                color: aliceblue;
                 opacity: 1;
-                vertical-align: super;
+                position: relative;
+                bottom: .2em;
+                transition: all .2s;
             }
 
- 
+ .about{
+    padding: 5em 0;
+ }
+
+    .about h2{
+        font-size: 2.4rem;
+    }
+
+    .about p , .about h2 , .about h3{
+        text-align: center;
+    }
+
+        .cards{
+            padding: 8vh 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+        }
+
+       
+        .card{
+            margin: 0px 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card h3{
+            font-size: 1.3rem;
+        }
+
+        .card i{
+            font-size: 4em;
+            margin: 20px;
+        }
