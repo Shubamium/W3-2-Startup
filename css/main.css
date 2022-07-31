@@ -20,21 +20,19 @@ body{
 .head{
     display: flex;
     justify-content: space-between;
-    box-shadow: 3px 0 5px black;
+    box-shadow: 3px 0 5px black;    
 }
     .head h1{
-        padding: 20px;
-
+        padding: 1vh 20px;
         font-weight: 100;
     }
     .head .nav {
         min-width: 500px;
-        min-height: 70px;
-        padding: 0 1em;
+        min-height: 40px;
+        padding-left: 1em;
     }
         .head .nav .navbar{
             list-style-type: none;
-            
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -53,6 +51,10 @@ body{
             .head .nav .navbar li i{
                 font-size: 1.4rem;
                 margin: 0px .4rem;
+            }
+            .head .nav .navbar li:hover{
+                background-color: grey;
+                cursor: pointer;
             }
     
 
@@ -105,22 +107,22 @@ body{
             cursor: pointer;
         }
 
-        .social .icons{
-            display: flex;
-            gap: 4px;
+            .social .icons{
+                display: flex;
+                gap: 4px;
+                
+                list-style-type: none;
+            }
             
-            list-style-type: none;
-        }
-        
-        .social .icons li{
-            font-size: 1.5rem;
-            opacity: .3;
-        }
+            .social .icons li{
+                font-size: 1.5rem;
+                opacity: .3;
+            }
 
-        .social .icons li:hover{
-            font-size: 1.5rem;
-            opacity: 1;
-            vertical-align: super;
-        }
+            .social .icons li:hover{
+                font-size: 1.5rem;
+                opacity: 1;
+                vertical-align: super;
+            }
 
  
