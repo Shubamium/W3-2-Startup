@@ -179,9 +179,32 @@ body{
     gap: 20px;
     align-items: center;
     min-height: 45vh;
+
     /*Add it to media queries later*/
     padding-right: 4em;
+    position: relative;
 }
+
+    .window::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        /* Overlay Styling */
+        background-image: url("../media//img/19742.jpg");
+        background-size: 40%;
+        opacity: .2;
+        background-blend-mode: multiply;
+        z-index: 10;
+    }
+    
+    .window > *{
+        z-index: 20;
+    }
 
     .window img{
         width: auto;
@@ -189,12 +212,18 @@ body{
         max-height: 400px;
         padding: 2em 1.5em;
         border-radius: 50px;
+
     }
 
     .window .text-part{
         flex-direction: column;
         align-items: flex-end;
     }
+
+        .window h2{
+            font-size: 2rem;
+        }
+
         .window .text-part p{
             max-width: 50ch;
             text-align: right;
