@@ -14,7 +14,11 @@ body{
 .position-bottom-left{
     position: absolute;
     bottom: 1em;
+}
 
+.flex-center{
+    display: flex;
+    justify-content: center;
 }
 
 .head{
@@ -87,12 +91,12 @@ body{
     }
 
     .main-display button{
-        padding: .5em;
-        background-color: rgba(104, 104, 104, 0.809);
+        padding: .7em;
+        background-color: rgba(86, 86, 86, 0.809);
         border: none;
         margin: 1.1em 0;
         font-size: larger;
-        border-radius: .2vw;
+        border-radius: .4vw;
         width: 400px;
     }
 
@@ -101,11 +105,11 @@ body{
             font-size: 1.5rem;
         }
 
-        .main-display button:hover{
-            background-color:  rgba(173, 173, 173, 0.913);
-            transition: background-color .2s;
-            cursor: pointer;
-        }
+    .main-display button:hover{
+        background-color:  rgba(86, 62, 225, 0.913);
+        transition: background-color .2s;
+        cursor: pointer;
+    }
 
             .social .icons{
                 display: flex;
@@ -149,19 +153,56 @@ body{
             grid-template-rows: auto;
         }
 
-       
-        .card{
-            margin: 0px 10px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
+            .card{
+                margin: 0px 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
 
-        .card h3{
-            font-size: 1.3rem;
-        }
+            .card h3{
+                font-size: 1.3rem;
+            }
 
-        .card i{
-            font-size: 4em;
-            margin: 20px;
-        }
+            .card i{
+                font-size: 4em;
+                margin: 20px;
+            }
+
+.window {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    min-height: 45vh;
+    /*Add it to media queries later*/
+    padding-right: 4em;
+}
+
+    .window img{
+        width: auto;
+        height: auto;
+        max-height: 400px;
+        padding: 2em 1.5em;
+        border-radius: 50px;
+    }
+    .window .text-part{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .window .text-part p{
+        max-width: 50ch;
+        text-align: right;
+    }
+    .window .text-part button{
+        padding: 1em;
+        margin: 2em 0;
+        background-color: black;
+        color: aliceblue;
+    }
+    .window .text-part button:hover{
+        cursor: pointer;
+        background-color: grey;
+        color: white;
+    }
