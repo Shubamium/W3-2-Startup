@@ -445,5 +445,52 @@ body{
             cursor: pointer;
         }
 
-    
+
+.contact{
+    background-color: rgb(234, 227, 227);
+    padding: 4em;
+    text-align: center;
+}
+    .contacts{
+        list-style-type: none;
+    }
+        .contact h3{
+            font-size: 2rem;
+        }
+        .contacts li{
+            display: flex;
+            padding: 20px;
+        }
+        .contacts i{
+            font-size: 1.4rem;
+        }
+        .contacts p{
+            padding: 0 .4rem;
+        }
+
+
+    .contact-form{
+        min-height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .contact-form > * {
+            margin: .2em 0;
+            padding: 1.4em .5em;
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .contact-form button{
+            width: 40%;
+            background-color: black;
+            color: white;
+        }
+
+        .contact-form button:hover{
+            background-color: grey;
+            cursor: pointer;
+        }
+
+
 
