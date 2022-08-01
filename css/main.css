@@ -265,7 +265,7 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow:  0px 0px 15px rgba(56, 56, 56, 0.609);
+            box-shadow:  0px 0px 10px rgba(56, 56, 56, 0.609);
         }
 
         .people-card img{
@@ -304,7 +304,7 @@ body{
 .stats{
     color: white;
     background-color: grey;
-    font-size: 2rem;
+    font-size: 1.4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
