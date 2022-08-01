@@ -503,5 +503,29 @@ body{
             cursor: pointer;
         }
 
+.foot{
+    background-color: black;
+    height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.foot button{
+    padding: 1em 1.5em;
+    margin: 1.2em 0;
+    color: white;
+}
 
+.foot button a{
+    text-decoration:  none;
+    color: black;
+    font-size: 1rem;
+}
+
+.foot button a i{
+    font-size: 2rem;
+    vertical-align: sub;
+}
