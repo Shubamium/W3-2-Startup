@@ -263,14 +263,15 @@ body{
         .people-card{
             border: 1px solid grey;
             display: flex;
+            justify-content:space-between;
             flex-direction: column;
-            justify-content: space-between;
             box-shadow:  0px 0px 10px rgba(56, 56, 56, 0.609);
+            min-height: 550px;
+            height: 550px;
         }
 
         .people-card img{
             width : 100%;
-            max-height: 800px;
         }
             .people-card button{
                 padding: 15px;
@@ -309,7 +310,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 5vh;
-    min-height: 20vh;
+    min-height: 30vh;
 }
     .stats h2{
         text-align: center;
