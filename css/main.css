@@ -35,6 +35,11 @@ body{
 }
 
 .head{
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    width: 100%;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     box-shadow: 3px 0 5px black;    
