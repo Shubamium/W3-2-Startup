@@ -580,3 +580,39 @@ body{
         background-size: 55%;
    }
 }
+
+@media screen and (max-width:800px) {
+    .cards{
+        padding: 2em 2em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+}
+@media screen and (max-width:480px) {
+    
+    .main-display{
+        text-align: center;
+    }
+
+    .main-display button{
+        padding: .7em;
+        background-color: rgba(86, 86, 86, 0.809);
+        border: none;
+        margin: 1.1em 0;
+        font-size: larger;
+        border-radius: .4vw;
+        width: 100%;
+    }
+
+    .about h2{
+        font-size: 1.8rem;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 4em;
+    }
+
+}
