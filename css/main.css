@@ -18,6 +18,8 @@
 
 body{
     font-family: 'dosis',sans-serif;
+    position: fixed;
+    width: 100%;
 }
 
 .upper-align {
