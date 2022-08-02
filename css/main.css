@@ -205,13 +205,10 @@ body{
 .window {
     background-color: lightgray;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     gap: 20px;
     align-items: center;
     min-height: 45vh;
-
-    /*Add it to media queries later*/
-    padding-right: 4em;
     position: relative;
 }
 
@@ -237,12 +234,9 @@ body{
     }
 
     .window img{
-        width: auto;
-        height: auto;
-        max-height: 400px;
+        max-width: 100%;
         padding: 2em 1.5em;
         border-radius: 50px;
-
     }
 
     .window .text-part{
@@ -579,6 +573,9 @@ body{
     .main-display:hover{
         background-size: 55%;
    }
+
+   .window img{
+   }
 }
 
 @media screen and (max-width:800px) {
@@ -587,12 +584,25 @@ body{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+    
+    .window{
+        grid-template-columns: 1fr;
+    }
+
+    .window .text-part{
+        padding-top: 5em;
+        align-items: center;
+    }
+
+    .window .text-part p{
+        text-align: center;
+    }
 
 }
 @media screen and (max-width:480px) {
     
     .main-display{
-        text-align: center;
+        text-align: ce;
     }
 
     .main-display button{
