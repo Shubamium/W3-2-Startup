@@ -222,9 +222,9 @@ body{
         height: 100%;
 
         /* Overlay Styling */
-        background-image: url("../media//img/19742.jpg");
+        background-image: url("../media/img/19742.jpg");
         background-size: 40%;
-        opacity: .2;
+        opacity: .3;
         background-blend-mode: multiply;
         z-index: 10;
     }
@@ -629,7 +629,12 @@ body{
         grid-template-columns: 1fr;
     }
 
-
+    .window::after {
+       
+        /* Overlay Styling */
+        background-image: url("../media/img/19742.jpg");
+        background-size: 120%;
+    }
 }
 
 @media screen and (max-width:480px) {
