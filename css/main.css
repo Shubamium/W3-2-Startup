@@ -354,6 +354,7 @@ body{
     .our-work h2 {
         font-size: 3rem;
     }
+
     .our-work .img-showcase{
         display: grid;
         gap:1em;
@@ -610,6 +611,20 @@ body{
         margin: 2em 0;
     }
 
+    
+    .our-skills{
+        grid-template-columns: 1fr;
+        padding: 5em 0;
+    }
+
+    .our-skills > *{
+        padding: 2em;
+    }
+
+    .our-work .img-showcase{
+        margin: 0 1em;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
@@ -653,4 +668,10 @@ body{
         text-align: center;
         margin: 2em 0;
     }
+
+    .our-work .img-showcase{
+        margin: 0 1em;
+        grid-template-columns: 1fr;
+    }
+
 }
