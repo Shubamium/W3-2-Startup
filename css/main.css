@@ -18,8 +18,6 @@
 
 body{
     font-family: 'dosis',sans-serif;
-    position: fixed;
-    width: 100%;
 }
 
 .upper-align {
@@ -282,7 +280,6 @@ body{
     }
 
     .people-cards{
-        height: 100%;
         padding: 2em 20px;
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -296,11 +293,12 @@ body{
             flex-direction: column;
             box-shadow:  0px 0px 10px rgba(56, 56, 56, 0.609);
             min-height: 550px;
-            height: 550px;
         }
 
         .people-card img{
-            width : 100%;
+            max-width: 100%;
+            min-height: 50%;
+            object-fit: cover;
         }
         
             .people-card button{
@@ -576,8 +574,10 @@ body{
         background-size: 55%;
    }
 
-   .window img{
-   }
+    .people-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width:800px) {
@@ -625,6 +625,11 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 4em;
+    }
+
+    
+    .people-cards{
+        grid-template-columns: 1fr;
     }
 
 }
