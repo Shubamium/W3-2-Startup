@@ -600,7 +600,19 @@ body{
         text-align: center;
     }
 
+    
+    .stats{
+        flex-wrap: wrap;
+    }
+    .stat{
+        width: 50%;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+
 }
+
 @media screen and (max-width:480px) {
     
     .main-display{
@@ -632,4 +644,13 @@ body{
         grid-template-columns: 1fr;
     }
 
+     
+    .stats{
+        flex-wrap: wrap;
+    }
+    .stat{
+        width: 100%;
+        text-align: center;
+        margin: 2em 0;
+    }
 }
